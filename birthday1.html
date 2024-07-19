@@ -1,0 +1,449 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>❤️Happy Birthday Pondatiiiiiiii❤️</title>
+<!-- <link rel="stylesheet" href="style.css"> -->
+<style>
+    *{
+    margin: 0%;
+    padding: 0%;
+    box-sizing: border-box;
+    font-family: Poppins,sans-serif;
+}
+
+body{
+    background-color: rgb(0, 0, 0);
+
+}
+.card{
+    width: 640px;
+    height: 400px;
+    position: absolute;
+    margin: auto;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    -webkit-perspective: 1200px;
+    perspective: 1200px;
+    transition: 1s;
+}
+.card:hover{
+    transform: rotate(-5deg);
+}
+.card:hover .out{
+    transform: rotateY(-130deg);
+
+}
+
+.out,.in{
+    width: 50%;
+    height: 100%; 
+    position:absolute;
+    left: 50.1%;
+
+
+}
+
+.in{
+    background: linear-gradient(
+        to right,
+        #e0e0e0,#ffffff 30px
+    );
+    line-height: 3;
+    padding: 0 20px;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    left: 50%;
+
+}
+.out {
+    -webkit-transform-style: preserve-3d;
+    transform-style: preserve-3d;
+    z-index: 1;
+    transform-origin: left;
+    transition: 2s;
+}
+
+.font,.back{
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    backface-visibility: hidden;
+    -webkit-backface-visibility: hidden;
+    transform: rotateX(0deg'angle');
+    background-color: #ffffff;
+
+}
+.font{
+    background-color: #ffffff;
+}
+
+.back{
+    transform: rotateY(180deg);
+    background: linear-gradient(to left, #e0e0e0,#ffffff 30%);
+}
+.cake{
+    width: 100%;
+    position: absolute;
+    bottom: 30px;
+}
+
+.top-layer,
+.middle-layer,
+.bottom-layer{
+    height: 80px;
+    width: 240px;
+    background-repeat: repeat;
+    background-size: 60px 100px;
+    background-position: 28px 0 ;
+    background-image: linear-gradient(
+        transparent 50px,
+        #fedbab 50px,
+        #fedbab 60px,
+        transparent 60px
+
+    ),
+    radial-gradient(
+        circle at 30px 5px,
+        #994c10 30px,
+        #fcbf29 31px);
+    border-radius: 10px 10px 0 0 ;
+    position: relative;
+    margin: auto;
+}
+
+.middle-layer{
+    transform: scale(0.85);
+    top: 6px;
+}
+.top-layer{
+    transform: scale(0.7);
+    top: 26px;
+}
+.candle{
+    height: 45px;
+    width: 15px;
+    background: repeating-linear-gradient(
+        45deg,
+        #fd3018 0 ,
+        #fd3018 5px,
+        #ffa89e 5px,
+        #ffa89e 10px
+
+    );
+    position: absolute;
+    margin: auto;
+    right: 0;
+    left: 0;
+    bottom: 202px;
+}
+.candle:before{
+    content: "";
+    position: absolute;
+    height: 16px;
+    width: 16px;
+    background-color: #ffa500;
+    border-radius: 0 50% 50% 50%;
+    bottom: 48px;
+    transform: rotate(45deg);
+    left: -1px;
+}
+
+.out p{
+    font-size: 17px;
+    margin-top: 30px;
+    text-align: center;
+    letter-spacing: 2px;
+}
+
+.button {
+    --background: #1E2235;
+    --color: #F6F8FF;
+    --shadow: #{rgba(#00093D, .24)};
+    --cannon-dark: #A6ACCD;
+    --cannon-light: #F6F8FF;
+    --cannon-shadow: #{rgba(#0D0F18, .9)};
+    --confetti-1: #892AB8;
+    --confetti-2: #EA4C89;
+    --confetti-3: #FFFF04;
+    --confetti-4: #4AF2FD;
+    --z-before: -6;
+    display: block;
+    outline: none;
+    cursor: pointer;
+    position: relative;
+    border: 0;
+    background: none;
+    padding: 9px 22px 9px 16px;
+    line-height: 26px;
+    font-family: inherit;
+    font-weight: 600;
+    font-size: 14px;
+    color: var(--color);
+    -webkit-appearance: none;
+    -webkit-tap-highlight-color: transparent;
+    transition: transform var(--transform-duration, .4s);
+    will-change: transform;
+    transform-style: preserve-3d;
+    transform: perspective(440px) rotateX(calc(var(--rx, 0) * 1deg)) rotateY(calc(var(--ry, 0) * 1deg)) translateZ(0);
+    &:hover {
+        --transform-duration: .16s;
+    }
+    &.success {
+        --confetti-scale: 0;
+        --stroke-dashoffset: 15;
+    }
+    &:before {
+        content: '';
+        position: absolute;
+        left: 0;
+        top: 0;
+        right: 0;
+        bottom: 0;
+        border-radius: 100px;
+        transform: translateZ(calc(var(--z-before) * 1px));
+        background: var(--background);
+        box-shadow: 0 4px 8px var(--shadow);
+    }
+    .icon,
+    span {
+        display: inline-block;
+        vertical-align: top;
+        position: relative;
+        z-index: 1;
+    }
+    .icon {
+        --z: 2px;
+        width: 24px;
+        height: 14px;
+        margin: 8px 16px 0 0;
+        transform: translate(calc(var(--icon-x, 0) * 1px), calc(var(--icon-y, 0) * 1px)) translateZ(2px);
+        .confetti {
+            position: absolute;
+            left: 17px;
+            bottom: 9px;
+            svg {
+                width: 18px;
+                height: 16px;
+                display: block;
+                stroke-width: 1px;
+                fill: none;
+                stroke-linejoin: round;
+                stroke-linecap: round;
+                * {
+                    transition: stroke-dashoffset .2s;
+                    stroke-dasharray: 15 20;
+                    stroke-dashoffset: var(--stroke-dashoffset, 0);
+                    stroke: var(--stroke-all, var(--stroke, var(--confetti-2)));
+                    &:nth-child(2) {
+                        --stroke: var(--confetti-3);
+                    }
+                    &:nth-child(3) {
+                        --stroke: var(--confetti-1);
+                    }
+                }
+            }
+            .emitter {
+                position: absolute;
+                left: 4px;
+                bottom: 4px;
+                pointer-events: none;
+                div {
+                    width: 4px;
+                    height: 4px;
+                    margin: -2px 0 0 -2px;
+                    border-radius: 1px;
+                    position: absolute;
+                    left: 0;
+                    top: 0;
+                    transform-style: preserve-3d;
+                    background: var(--confetti-all, var(--b, none));
+                }
+            }
+            i {
+                width: 4px;
+                height: 4px;
+                display: block;
+                transform: scale(var(--confetti-scale, .5));
+                position: absolute;
+                transition: transform .25s;
+                left: var(--left, -1px);
+                top: var(--top, 3px);
+                border-radius: var(--border-radius, 1px);
+                background: var(--confetti-background, var(--confetti-3));
+                &:nth-child(2) {
+                    --left: 9px;
+                    --top: -1px;
+                    --border-radius: 2px;
+                    --confetti-background: var(--confetti-4);
+                }
+                &:nth-child(3) {
+                    --left: 5px;
+                    --top: 3px;
+                    --confetti-background: var(--confetti-1);
+                }
+                &:nth-child(4) {
+                    --left: 10px;
+                    --top: 14px;
+                    --confetti-background: var(--confetti-2);
+                }
+                &:nth-child(5) {
+                    --left: 9px;
+                    --top: 7px;
+                    --confetti-background: var(--confetti-4);
+                }
+                &:nth-child(6) {
+                    --left: 6px;
+                    --top: 8px;
+                    --border-radius: 2px;
+                    --confetti-background: var(--confetti-2);
+                }
+            }
+        }
+        .cannon {
+            position: relative;
+            width: 24px;
+            height: 14px;
+            transform: translate(0, 3px) rotate(-45deg);
+            filter: drop-shadow(-2px 2px 2px var(--cannon-shadow));
+            &:before,
+            &:after {
+                content: '';
+                display: block;
+                height: 14px;
+            }
+            &:before {
+                background: linear-gradient(var(--cannon-dark), var(--cannon-light) 50%, var(--cannon-dark));
+                width: 100%;
+                -webkit-clip-path: polygon(25px -1px, 0 52%, 25px 15px);
+                clip-path: polygon(25px -1px, 0 52%, 25px 15px);
+            }
+            &:after {
+                width: 6px;
+                position: absolute;
+                right: -3px;
+                top: 0;
+                border-radius: 50%;
+                box-shadow: inset 0 0 0 .5px var(--cannon-light);
+                background: linear-gradient(90deg, var(--cannon-dark), var(--cannon-light));
+            }
+        }
+    }
+    &.white {
+        --background: #fff;
+        --color: #1E2235;
+        --border: #E1E6F9;
+        --shadow: none;
+        --cannon-dark: #103FC5;
+        --cannon-light: #275EFE;
+        --cannon-shadow: #{rgba(#00093D, .2)};
+        &:before {
+            box-shadow: inset 0 0 0 1px var(--border);
+        }
+    }
+    &.grey {
+        --background: #404660;
+        --cannon-shadow: #{rgba(#0D0F18, .2)};
+        --cannon-dark: #D1D6EE;
+        --cannon-light: #FFFFFF;
+    }
+}
+
+html {
+    box-sizing: border-box;
+    -webkit-font-smoothing: antialiased;
+}
+
+* {
+    box-sizing: inherit;
+    &:before,
+    &:after {
+        box-sizing: inherit;
+    }
+}
+
+body {
+    min-height: 100vh;
+    display: flex;
+    font-family: 'Inter', Arial;
+    justify-content: center;
+    align-items: center;
+    background: #000000;
+    .button {
+        margin: 0 12px;
+    }
+    .dribbble {
+        position: fixed;
+        display: block;
+        right: 20px;
+        bottom: 20px;
+        img {
+            display: block;
+            height: 28px;
+        }
+    }
+    .twitter {
+        position: fixed;
+        display: block;
+        right: 64px;
+        bottom: 14px;
+        svg {
+            width: 32px;
+            height: 32px;
+            fill: #1da1f2;
+        }
+    }
+}
+
+</style>
+</head>
+<body>
+    <div class="background">
+    <div class="card">
+        <div class="out">
+            <div class="font">
+                <p>💝Happy 💙 Birthday 💋🦋🤍Pondatiiiiiiii...............🫶💘💘</p>
+                <div class="cake">
+                    <div class="top-layer"></div>
+                    <div class="middle-layer"></div>
+                    <div class="bottom-layer"></div>
+                    <div class="candle"></div>
+                </div>
+            </div>
+            <div class="back">
+
+            </div>
+        </div>
+        <div class="in">
+            <p>Wishing 💗🦋💋💕❤️💓😘♾️
+                You Very Very Very....... 💗
+                Special 🌍💋
+                <h3>Happiest Birthday 🌍🤍Pondatiiiiiiii..</h3>🦋🦋💕💋💋💘
+            </p>
+            <button class="button">
+                <div class="icon">
+                    <div class="cannon"></div>
+                    <div class="confetti">
+                        <svg viewBox="0 0 18 16">
+                            <polyline points="1 10 4 7 4 5 6 1" />
+                            <path d="M4,13 C5.33333333,9 7,7 9,7 C11,7 12.3340042,6 13.0020125,4" />
+                            <path d="M6,15 C7.83362334,13.6666667 9.83362334,12.6666667 12,12 C14.1663767,11.3333333 15.8330433,9.66666667 17,7" />
+                        </svg>
+                        <i></i><i></i><i></i><i></i><i></i><i></i>
+                        <div class="emitter"></div>
+                    </div>
+                </div>
+                <a href="birthday2.html" style="text-decoration: none;"><span>Click Pannu Pondatiiiiiiii</span></a>
+            </button>
+            
+        </div>
+    </div>
+</div>
+</body>
+</html>
