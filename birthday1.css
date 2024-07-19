@@ -209,6 +209,7 @@ body{
         vertical-align: top;
         position: relative;
         z-index: 1;
+        color: white;
     }
     .icon {
         --z: 2px;
