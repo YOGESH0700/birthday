@@ -10,5 +10,14 @@
             justify-content: center; /* Center content horizontally */
             align-items: center; /* Center content vertically */
             color: white; /* Text color */
-            font-size: 24px
+        }
+        .inside{
+            display: inline-block;
+            padding: 30px;
+            width: 600px;
+            height: 450px;
+            border-color: white;
+            border-radius: 5px;
+            border-width: 2px;
+            border-style: solid;
         }
